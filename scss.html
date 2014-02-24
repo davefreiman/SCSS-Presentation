@@ -147,27 +147,37 @@
 				<section>
 					<!-- David -->
 					<section>
-						<h2>Media Queries &amp; Context</h2>
+						<h2>Media Queries &amp; Foundation's Grid</h2>
+					</section>
+					<section>
+						<h2>The Grid</h2>
+						<p>Grid Rows &amp; Grid Columns are functions built into Foundation's scss library</p>
+						<p>Both can be included as mixins to add structure to page layouts</p>
+						<h4>Syntax</h4>
+						<p> Use <span class="code">@include grid-row;</span> on the parent class</p>
+						<p> Use <span class="code">@include grid-columns($columns);</span> on the child class</p>
 					</section>
 
 					<section>
 						<h2>Media Queries</h2>
-						<p>
-							examples
-						</p>
-					</section>
+						<p>Can be nested inside scss selectors</p>
+						<p>References to screen widths can be stored as variables</p>
 
+						<h4>Syntax</h4>
+						<p>Inside of desired scss selector:</p>
+						<p><span class="code">@media #{$smaller} {}</span></p>
+					</section>
 					<section>
-						<h2>Grid Functions Example</h2>
-						<p>
-							examples
-						</p>
+						<h2>Mobile-First Design</h2>
+						<p>Scss is cleanest this way</p>
+						<p>Design page for mobile view and use queries to change content as window expands</p>
+
+						<h4>Benefits</h4>
+						<p>No screen maximum so will not break on larger displays</p>
+						<p>Mobile users will not have to get heavy desktop assets</p>
 					</section>
 				</section>
-
-
-			</div>
-			
+			</div>			
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
