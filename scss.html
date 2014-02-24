@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>SCSS Workflow - Demac Media</title>
+
+		<meta name="description" content="SCSS workflow for Demac Media">
+		<meta name="author" content="Kyle L. Mcgregor">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>SCSS</h1>
+					<h2>Front-End Dev</h2>
+					<h3>Demac Media 2014</h3>
+				</section>
+
+				<section>
+					<!-- Kyle -->
+					<section>
+						<h2>Sassy CSS</h2>
+						<p>Methodology </p>
+						<ol>
+							<li>What is SCSS?</li>
+							<li>Nesting</li>
+							<li>Partials</li>
+						</ol>
+					</section>
+
+					<section>
+						<h2>What is SCSS?</h2>
+						<p>
+						</p>
+					</section>
+
+					<section>
+						<h2>Nesting</h2>
+						
+					</section>
+
+					<section>
+						<h2>Partials</h2>
+						
+					</section>
+				</section>
+
+				<section>
+					<!-- Tony -->
+					<section>
+						<h2>Tools &amp; Libraries</h2>
+						<ol>
+							<li>Prepros</li>
+							<li>Compass</li>
+						</ol>
+					</section>
+
+					<section>
+						<h2>Prepros</h2>
+						<p>
+							Handy FREE tool for preprocessing the SCSS into CSS. Has a Chrome extension for keeping an eye on changes &amp; refreshing your page. You need to set the server though.
+						</p>
+					</section>
+
+					<section>
+						<h2>Prepros - Set-up</h2>
+						<p>
+							example
+						</p>
+					</section>
+
+					<section>
+						<h2>Compass</h2>
+						<p>
+							Collection of mixins. Not absolutely necessary, but you'll find there are things you'll need over and again.
+						</p>
+					</section>
+
+					<section>
+						<h2>Compass - Use Case</h2>
+						<p>
+							Example
+						</p>
+					</section>
+
+				</section>
+
+				<section>
+					<!-- Val -->
+					<section>
+						<h2>Superpowers</h2>
+						<ol>
+							<li>Variables</li>
+							<li>Mixins</li>
+							<li>Functions</li>
+						</ol>
+					</section>
+
+					<section>
+						<h2>Variables</h2>
+						<p>
+							examples
+						</p>
+					</section>
+
+					<section>
+						<h2>Mixins</h2>
+						<p>
+							examples
+						</p>
+					</section>
+
+					<section>
+						<h2>Functions</h2>
+						<p>
+							examples
+						</p>
+					</section>
+				</section>
+
+				<section>
+					<!-- David -->
+					<section>
+						<h2>Media Queries &amp; Context</h2>
+					</section>
+
+					<section>
+						<h2>Media Queries</h2>
+						<p>
+							examples
+						</p>
+					</section>
+
+					<section>
+						<h2>Grid Functions Example</h2>
+						<p>
+							examples
+						</p>
+					</section>
+				</section>
+
+
+			</div>
+			
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
