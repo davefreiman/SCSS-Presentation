@@ -84,30 +84,110 @@
 					<section>
 						<h2>Prepros</h2>
 						<p>
-							Handy FREE tool for preprocessing the SCSS into CSS. Has a Chrome extension for keeping an eye on changes &amp; refreshing your page. You need to set the server though.
+							FREE Compiler for SCSS to CSS compilations. <br />
+                            Also minifies js and other files. <br />
+                            Watches file changes to auto compile on save
 						</p>
 					</section>
 
 					<section>
 						<h2>Prepros - Set-up</h2>
-						<p>
-							example
-						</p>
+						<ol>
+                            <li>Download Prepros at http://alphapixels.com/prepros</li>
+                            <li>Optional - Install Live Refresh on Chrome</li>
+                            <li>Install Prepros</li>
+                            <li>Drag and Drop SCSS's parent folder into Prepros</li>
+                            <li>Setup Live Refresh</li>
+						</ol>
 					</section>
+
+                    <section>
+                        <h2>Live Refresh</h2>
+                        <p>
+                            A Chrome extension for Prepros allows Prepros to refresh changes on compile directly to Chrome.
+                        </p>
+                        <p>
+                            Click on the <img src="./images/settings.png" alt="" /> for project settings<br />
+                            Check Live Refresh if it isn't checked off already.  Click on "Use Custom Server" to specify a domain.
+                        </p>
+                        <p>
+                            <img src="./images/prepros-live-refresh.png" alt="" />
+                        </p>
+                        <p>
+                            Note: Include "http://".  It's good practice!
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2>Prepros - Setup notes</h2>
+                        <p>
+                            After installing Prepros, it is a good idea to turn off auto compile on any files other than scss files.
+                            Javascript files force the browser to refresh each page that matches the live refresh domain and can be a bit of a nuisance.
+                        </p>
+                        <p>
+                            Settings can be found at the top right corner of Prepros.  Select each language and de-select "auto compile".
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2>Prepros - Adding a Project to Prepros</h2>
+                        <p>
+                            Add a project by dragging it into Prepros. <br />
+                            For Magento installations, drag its skin folder. <br />
+                            E.g. /skin/frontend/your-package/your-theme<br />
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2>Auto Compile</h2>
+                        <p>
+                            Prepros is now setup to auto-compile all scss files upon auto-saving. <br />
+                            Ensure your styles are being compiled to the css folder by doublechecking the directory <br />
+                            <img src="./images/prepros-directory.png" alt="" />
+                        </p>
+                    </section>
 
 					<section>
 						<h2>Compass</h2>
 						<p>
-							Collection of mixins. Not absolutely necessary, but you'll find there are things you'll need over and again.
+							Collection of mixins. Not absolutely necessary, but you'll find there are things you'll need over and again.<br />
+                            Great for ensuring CSS3 styles are cross browser compliant without writing all the extra code.<br />
+                            Ensure CSS3 usage is up to date along with Compass library.
 						</p>
+                        <p>
+                            Prepros comes with the compass library.  <br />
+                            Use Compass by adding:
+                        </p>
+                        <p>
+                            @import "compass";
+                        </p>
 					</section>
 
 					<section>
 						<h2>Compass - Use Case</h2>
 						<p>
-							Example
+							Compass mixins are used like any regular mixin. <br />
+                            For example, to use the border-radius mixin:
 						</p>
+                        <p>
+                            @import border-radius(4px, 4px);
+                        </p>
+                        <p>would output:</p>
+                        <p>
+                            -webkit-border-radius: 4px 4px;<br />
+                            -moz-border-radius: 4px / 4px;<br />
+                            -khtml-border-radius: 4px / 4px;<br />
+                            border-radius: 4px / 4px; <br />
+                        </p>
 					</section>
+
+                    <section>
+                        <h2>Compass - Use Case Cont</h2>
+                        <p>
+                            An entire list of mixins and functions can be found at: <br />
+                            http://compass-style.org/reference/compass/
+                        </p>
+                    </section>
 
 				</section>
 
