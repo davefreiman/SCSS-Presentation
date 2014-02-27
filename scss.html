@@ -196,34 +196,58 @@
 					<section>
 						<h2>Superpowers</h2>
 						<ol>
+							<li>Functions</li>
 							<li>Variables</li>
 							<li>Mixins</li>
-							<li>Functions</li>
 						</ol>
-					</section>
-
-					<section>
-						<h2>Variables</h2>
-						<p>
-							examples
-						</p>
-					</section>
-
-					<section>
-						<h2>Mixins</h2>
-						<p>
-							examples
-						</p>
 					</section>
 
 					<section>
 						<h2>Functions</h2>
 						<p>
-							examples
+							You know what functions are.
+						</p>
+						<p>
+							<code>
+								@function calc-percent($target, $container) {
+  									@return ($target / $container) * 100%;
+								}
+							</code>
+							<code>
+								@function emCalc($pxWidth) {
+  									@return $pxWidth / $em-base * 1em;
+								}
+							</code>
+						</p>
+					</section>
+
+					<section>
+						<h2>Variables</h2>
+						<p>
+							You know what variables are.
+						</p>
+						
+					</section>
+
+					<section>
+						<h2>Mixins</h2>
+						<p>
+							But what are mixins? Well... they are everything O_O
+						</p>
+						<p>
+							<code>
+								@mixin sprite {
+									background: url('../images/sprite.png');
+								}
+
+								.arrow {
+  									@include sprite;
+  									background-position: -90px -150px;
+								}
+							</code>
 						</p>
 					</section>
 				</section>
-
 				<section>
 					<!-- David -->
 					<section>
